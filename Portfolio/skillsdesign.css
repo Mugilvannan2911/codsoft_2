@@ -1,0 +1,77 @@
+.skill-title{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 33px;
+   font-weight: bold;
+   margin-top: 180px;
+}
+.parent-div-skills{
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.child-div-skills{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    margin-top: -30px;
+    transition: width 0.5s, height 0.5s, background-color 0.5s, color 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+}
+.technical-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.technical-content{
+    padding-left: 50px;
+    font-size: 12px;
+}
+.child-div-skills:hover{
+    width: 450px;
+    height: 450px;
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+.child-div-skills:hover .technical-title{
+    font-size:26px;
+}
+.child-div-skills:hover .technical-content{
+    font-size:20px;
+    margin-left: 30px;
+}
+
+/**Media Element in skills*********************************************/
+@media screen and (max-width: 400px){
+.parent-div-skills{
+    display: block;
+    height: 850px;
+    padding: 50px;
+}
+.child-div-skills{
+    width: 230px;
+    height: 300px;
+    margin-top: 80px;
+}
+.child-div-skills:hover{
+    width: 280px;
+    height: 350px;
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+.technical-title{
+    font-size:20px;
+}
+.technical-content{
+    font-size:13px;
+    padding-left: 10px;
+}
+}

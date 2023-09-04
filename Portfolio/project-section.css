@@ -1,0 +1,112 @@
+.project-title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 150px;
+}
+.box-area{
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper{
+    padding: 10px 10%;
+}
+#card-area{
+    padding: 50px 0;
+}
+.box {
+    width: 320px;
+    height: 500px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.box img{
+    width: 320px;
+    height: 500px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    object-fit: cover;
+}
+.overlay {
+	width: 320px;
+	height: 0;
+	background: linear-gradient(transparent,#ff004f 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	font-size: 10px;
+	transition: height 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.overlay h3 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 75%;
+	font-size: 20px;
+	letter-spacing: 2px;
+    color: white;
+	text-align: center;
+}
+.overlay p{
+   color: white;
+   font-size: 16px;
+   text-align: center;
+}
+.overlay a {
+	color: #262626;
+	text-decoration: none;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+    font-weight: 600;
+	margin-left: 100px;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+/**Media element for projects*********************************************/
+
+@media screen and (max-width: 400px){
+	.project-title{
+		margin-top: 150px;
+	}
+	.box-area{
+		margin-top: 20px;
+		display: block;
+	}
+	.box img{
+		width: 280px;
+        height: 450px;
+	}
+	.overlay{
+		width: 280px;
+	}
+	.overlay h3{
+		font-size: 20px;
+		text-align: center;
+	}
+	.overlay p{
+		font-size: 16px;
+	}
+	.overlay a{
+		font-size: 13px;
+		font-weight: 600;
+		margin-left: 90px;
+	}
+	.box{
+		width: 280px;
+        height: 450px;
+		margin-bottom: 60px;
+	}
+}

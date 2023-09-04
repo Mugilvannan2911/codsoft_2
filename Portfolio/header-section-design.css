@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+}
+.header-section{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.left-section .logo{
+    background-color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-family: Arial;
+    margin-right: 20px;
+}
+.logo-design{
+    color: rgb(160, 10, 241);
+}
+.right-section{
+   background-color: rgb(255, 255, 255);
+}
+ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+ul li{
+    float: left;
+}
+ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+a.lihover:hover{
+    background: linear-gradient(to right, rgb(61, 106, 255) 0%, rgb(174, 0, 255) 100%);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+a:active{
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 400px){
+    .header-section{
+        width: 100%;
+        padding: 0;
+    }
+    .left-section{
+        padding: 20px;
+    }
+    .left-section .logo{
+        font-size: 21px;
+        font-family: Arial;
+        margin-right: 20px;
+    }
+    .right-section{
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        float: none;
+    }
+}
+
+/*Home - Container - Design*/
+
+.home-container{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+}
+.sub-container{
+    margin-top: 50px;
+    width: 500px;
+    height: 400px;
+}
+.mytitle{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+.my-content{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 80px;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+.myname{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+.mylocation{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+.myname{
+    color: rgb(160, 10, 241);
+}
+.title{
+    color: rgb(160, 10, 241);
+}
+.my-details-container .download-btn{
+    background-color: rgb(160, 10, 241);
+    color: white;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 80px;
+    cursor: pointer;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.13);
+    font-size: 20px;
+}
+.download-btn:hover{
+    background-color: rgb(125, 12, 186);
+    transition: 0.3s;
+}
+.download-btn:active{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.13);
+    transform: translateX(2px) translateY(2px);
+    opacity: 1.8;
+}
+.my-image-1{
+    width: 400px;
+    height: 400px;
+    transition: transform 0.5s;
+    position: absolute;
+    margin-left: 15px;
+}
+.my-image-1:hover{
+    transform: scale(1.1);
+}
+.img-container{
+    margin-top: 40px;
+}
+/*Media element for home container***************/
+@media screen and (max-width: 400px){
+    .home-container{
+        width: 100%;
+        height: 600px;
+        display: block;
+    }
+    .my-details{
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .my-image-1{
+       margin-top: 10px;
+    }
+    .my-details-container .mytitle{
+        margin: 0;
+        text-align: center;
+    }
+    .my-details-container .my-content{
+        margin: 0;
+        text-align: center;
+    }
+    .my-details-container .myname{
+        margin: 0;
+        text-align: center;
+    }
+    .my-details-container .mylocation{
+        margin: 0;
+        text-align: center;
+    }
+    .my-details-container .download-btn{
+        margin: 0;
+        margin-left: 100px;
+    }
+    .sub-container{
+        height: 200px;
+    }
+    .img-container{
+        height: 290px;
+        
+    }
+    .my-image-1{
+        width: 300px;
+        height: 300px;
+        margin: 25px;
+    }
+}
+/************Header Navigation Floating Button********************************************/
+
+.nav-floating-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    float: right;
+    position: fixed;
+    bottom: 15px;
+    right: 0;
+    margin-right: 6px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.13);
+}
+.nav-floating-btn i{
+    font-size: 20px;
+    color: white;
+}
+
+/**Media element for navigation button**/
+@media screen and (max-width: 400px){
+    .nav-floating-btn{
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(255, 0, 0);
+        float: right;
+        position: fixed;
+        bottom: 10px;
+        left: 300px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.13);
+    }
+    .nav-floating-btn i{
+        font-size: 18px;
+        color: white;
+    }
+}
